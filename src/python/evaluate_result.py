@@ -9,9 +9,9 @@ def calculate(input_str):
 
 
 def write_to_result():
-    file = open("result.txt", w)
+    file = open("result.txt", "w")
     result = ""
-    match len(argv):
+    match len(sys.argv):
         case 1:
             result = "SyntaxError: No parameters passed"
         case _:
