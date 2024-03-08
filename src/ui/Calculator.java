@@ -1,5 +1,6 @@
 package ui;
 
+import handlers.FileHandler;
 import python.JavaPythonCommunication;
 
 import javax.swing.*;
@@ -75,6 +76,7 @@ public class Calculator extends JFrame {
         btDel.addActionListener(e -> deleteChar());
         btClear.addActionListener(e -> taScreen.setText(""));
 
+        FileHandler.logResult(null, "started the application");
     }
 
     public Calculator() {
