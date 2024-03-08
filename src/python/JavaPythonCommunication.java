@@ -5,6 +5,7 @@ import handlers.FileHandler;
 import java.io.IOException;
 
 public class JavaPythonCommunication {
+    private JavaPythonCommunication() {}
     private static void evalResult(String input) {
         Process process = null;
         try {
